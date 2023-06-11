@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://play-lh.googleusercontent.com/OF6-XCKzfVKLMLgSZOwvYnmj0NNOhOzu9meOAr1EJA-rWQ0HgSWjo-wCGRkKxHVkO212=w1024);
+  font-family: "Aclonica", sans-serif;
+}
+
+.container {
+  width: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background-color: #4e6c50;
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  box-shadow: -1.5rem -1.5rem #202020;
+  text-align: center;
+}
+
+.control {
+  width: 55%;
+  height: 70vh;
+  background-color: #42855b;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  box-sizing: border-box;
+  border-radius: 1rem;
+}
+
+.playGame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px 55px;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  border: none;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: #2eb086;
+  font-style: italic;
+}
+.input-wrapper {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  gap: 1rem;
+  margin: 1rem auto 1.5rem auto;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 2px solid #adaeae;
+  border-radius: 1rem;
+  outline: none;
+  appearance: text-field;
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]:focus {
+  border-color: #47a992;
+  border-width: 0.3rem;
+}
+
+button {
+  font-size: 2rem;
+  background-color: #b7ec71;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+}
+button:hover {
+  box-shadow: 13px -9px 37px 21px #aac8a7 inset;
+  -webkit-box-shadow: 13px -9px 37px 21px #aac8a7 inset;
+  -moz-box-shadow: 13px -9px 37px 21px #aac8a7 inset;
+}
+
+#restart {
+  padding: 0.5rem 1rem;
+  display: none;
+  margin: 0;
+  max-width: 40%;
+  margin-left: 180px;
+}
+
+.result {
+  margin-top: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4cd379;
+  word-break: break-all;
+  margin-top: 5px;
+}
+
+.error {
+  background-color: #1b9c85;
+  color: #b6c0b9;
+  font-size: 20px;
+}
+
+.success {
+  background-color: #b9ffd5;
+  color: #05c451;
+}
+
+.para1 {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.para2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.timer {
+  position: absolute;
+  font-size: 3rem;
+  top: 2%;
+  left: 40%;
+  font-weight: 600;
+  color: #f6ffde;
+}
+
+a {
+  text-decoration: none;
+}
+.header ul {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.header ul li {
+  list-style: none;
+  color: #f6ffde;
+}
+
+.InstructWord {
+  display: none;
+}
+.InstructWord p {
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 1.4rem;
+  color: #e3f2c1;
+  font-weight: 800;
+  width: 100%;
+  max-width: 50rem;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  line-height: 20px;
+  padding: 3px 0;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+.InstructWord p span {
+  color: #47a992;
+  font-size: 50px;
+}
+
+#instructions {
+  cursor: pointer;
+}
+#lastWord {
+  color: #12dde0;
+  font-size: 25px;
+  font-style: italic;
+}
+.firstWord {
+  margin-left: 150px;
+}
+
+#hint {
+  padding: 20px;
+}

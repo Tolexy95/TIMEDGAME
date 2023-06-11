@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Timer Project</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="timer.css" />
+  </head>
+  <body>
+    <div class="goHome">
+      <ul>
+        <a href="/index.html"><li>GO Home</li></a>
+        <a href="/games/games.html"><li>Game Page</li></a>
+        <li id="instructions">Instructions</li>
+      </ul>
+      <div class="InstructWord">
+        <p id="lastWord"><span>*</span> Welcome to the Word Guessing Game!</p>
+        <p>
+          <span>*</span>You will have 5 chances per round to guess a word within
+          30 minutes.
+        </p>
+        <p>
+          <span>*</span>If either the chances or timer expires, the game will
+          stop
+        </p>
+        <p>
+          <span>*</span>
+          The 30-minute timer will start immediately when you click the play
+          button.
+        </p>
+
+        <p>
+          <span>*</span>
+          Enter a letter or guess the entire word when prompted with the hint.
+        </p>
+        <p>
+          <span>*</span> If you enter a letter,if the letter is in the secret
+          word, the positions of the letter will be revealed to you and the
+          displayed word will be updated accordingly.
+        </p>
+        <p>
+          <span>*</span>
+          If your guess matches the secret word, you win the round and the game
+          ends.
+        </p>
+        <p>
+          <span>*</span> If your guess does not match the secret word, you lose
+          the round and the game ends.
+        </p>
+        <p>
+          <span>*</span>
+          Your final score will be displayed, indicating the number of rounds
+          you won.
+        </p>
+        <p id="lastWord">
+          <span>*</span>Click on instruction link to navigate back to start
+          button
+        </p>
+      </div>
+      <div class="outerControl"><button class="playGame">Start</button></div>
+      <div class="videoContainer">
+        <video width="300" height="300" id="bravoVideo">
+          <source src="./Bravo video.mp4" type="video/mp4" />
+        </video>
+        <video width="300" height="300" id="trialVideo">
+          <source src="./Try again video.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="game-container">
+        <div class="wrapper">
+          <div class="timer">
+            <span class="timer__part timer__part--minute">00</span>
+            <span class="timer__part">:</span>
+            <span class="timer__part timer__part--second">00</span>
+          </div>
+          <div id="score">score:</div>
+          <div class="hint-ref"></div>
+          <div id="user-input-section"></div>
+          <div id="message"></div>
+          <div id="letter-container"></div>
+          <button id="start">Play</button>
+        </div>
+      </div>
+      <div class="controls-container">
+        <p id="result"></p>
+        <p id="word"></p>
+        <p id="totalScore"></p>
+        <p id="adviceTextRandom"></p>
+        <div id="btnDiv"><button id="restart">Restart</button></div>
+      </div>
+    </div>
+
+    <script src="./JS Folder/Gamer.js" type="module"></script>
+  </body>
+</html>

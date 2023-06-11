@@ -1,0 +1,341 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  font-family: "Aclonica", sans-serif;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/972/781/187/power-the-inscription-patterns-the-game-wallpaper-preview.jpg);
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+.goHome ul {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.goHome ul li {
+  list-style: none;
+  color: rgb(48, 48, 204);
+}
+
+.outerControl {
+  width: 100%;
+  position: absolute;
+  height: 35rem;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(182, 88, 88);
+  max-width: 40rem;
+  border-radius: 0.5rem;
+  z-index: 20;
+}
+.game-container {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: white;
+  max-width: 36rem;
+  border-radius: 0.5rem;
+}
+
+.playGame {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1.5rem 2.5rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  background-color: #7786f5;
+}
+.timer {
+  font-family: sans-serif;
+  margin: 1rem 1rem;
+}
+
+.timer__part {
+  font-size: 50px;
+  font-weight: bold;
+}
+#chanceCount {
+  position: absolute;
+  top: 1.3rem;
+  right: 2rem;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hint-ref {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-left: 0.5rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.hint-ref span {
+  font-weight: 600;
+}
+
+#user-input-section {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: 700;
+}
+
+#message {
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#letter-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+  gap: 1rem 0.5rem;
+  margin: 0.5rem auto;
+  /* background-color: black; */
+}
+
+
+#letter-container button {
+  height: 2.5rem;
+  width: 3rem;
+  border-radius: 0.3em;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.5rem;
+  border: 2px solid #7786f5;
+
+}
+#letter-container button:hover{
+  transform: scale(0.85);
+  border: 5px solid black;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#letter-container .correct {
+  background-color: #008000;
+  color: #ffffff;
+  border: 2px solid #008000;
+}
+
+#letter-container .incorrect {
+  background-color: #8a8686;
+  color: #ffffff;
+  border: 2px solid #8a8686;
+}
+#start {
+  font-size: 1.5em;
+  padding: 1rem 3.2rem;
+  background-color: #7786f5;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 800;
+  margin: 0.5rem 12rem;
+  max-width: 30%;
+}
+#start:hover{
+  background-color: #4156f7;
+  transform: scale(0.9);
+}
+
+#restart {
+  font-size: 1rem;
+  padding: 20px 30px;
+  background-color: red;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 800;
+  max-width: 20%;
+}
+#btnDiv{
+  display: flex;
+  justify-content: center;
+}
+#restart:hover{
+  background-color: rgb(134, 0, 0);
+}
+.controls-container {
+  width: 40%;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#trialVideo{
+  margin-left: 80px;
+  margin-top: 100px;
+}
+
+#bravoVideo{
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+
+.hide {
+  display: none;
+}
+#word {
+  font-weight: 600;
+  margin: 1rem 1rem;
+  font-size: 1rem;
+  color: white;
+}
+
+#word span {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: rgb(155, 76, 76);
+  font-size: 1.5rem;
+}
+
+#totalScore{
+  font-size: 2rem;
+  color: blue;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  }
+
+#score {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: rgb(22, 22, 97);
+  font-weight: 800;
+  position: absolute;
+  left: 75%;
+  top: 12%;
+}
+
+#result {
+  font-size: 1.5rem;
+  color: white;
+}
+
+#adviceTextRandom {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: pink;
+  text-align: center;
+}
+
+.InstructWord {
+  display: none;
+  margin: 20px 20px;
+  
+}
+.InstructWord p{
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 1.2rem;
+  color: rgba(245, 245, 245, 0.788);
+  font-weight: 800;
+  width: 100%;
+  max-width: 50rem;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  line-height: 20px;
+  padding: 5px 0;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.InstructWord p span{
+color: pink;
+font-size: 50px;
+}
+
+#instructions {
+  cursor: pointer;
+}
+#lastWord{
+  color: rgb(106, 106, 255);
+  font-size: 25px;
+  font-style: italic;
+}
+
+
+/* Add media queries for different screen sizes */
+/* @media only screen and (max-width: 600px) {
+  /* Adjust font sizes, margins, and padding as needed */
+/* body {
+    font-size: 14px;
+  }
+  
+  .game-container {
+    height: auto;
+  }
+  
+  .hint-ref {
+    top: 10%;
+    left: 10%;
+    font-size: 1.2rem;
+  }
+  
+  #user-input-section {
+    margin-top: 3rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #start {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+  }
+} */
+
+/* Adjust layout for smaller devices */
+/* @media only screen and (max-width: 400px) {
+  .game-container {
+    max-width: 90%;
+  }
+} */
+
+/* Adjust layout for larger screens */
+/* @media only screen and (min-width: 1200px) {
+  .game-container {
+    max-width: 50em;
+  }
+}
+
+@media (max-width: 768px) {
+  .game-container {
+    padding: 1rem;
+  }
+}
+
+ */
+ 
