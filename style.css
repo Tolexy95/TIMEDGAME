@@ -18,7 +18,7 @@
   );
   --transparent-light-color: rgba(255, 255, 255, 0.05);
   --transparent-dark-color: rgba(0, 0, 0, 0.75);
-  --font-family: "Poppins", sans-serif;
+  --font-family: "Pathway Gothic One", sans-serif;
   --font-size-xsm: 1.2rem;
   --font-size-sm: 1.6rem;
   --font-size-md: 2.4rem;
@@ -35,7 +35,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Aclonica', sans-serif;
+  font-family: 'Pathway Gothic One', sans-serif;
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
@@ -50,15 +50,16 @@ main {
   align-items: center;
   /* background-color: #071c21; */
   background-color: rgba(0, 0, 0, 0.8);
-  font-family: 'Aclonica', sans-serif;
+  font-family: 'Pathway Gothic One', sans-serif;
 }
 
 header {
   background-color: #dedede;
-  color: #976f6f;
+  color: #523939;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   opacity: 1;
+  width: 110%;
 }
 
 a {
@@ -72,7 +73,7 @@ a {
 .article {
   /* border: 2px solid red; */
   position: absolute;
-  top: 40%;
+  top: 30%;
 }
 
 .animate {
@@ -92,7 +93,7 @@ a {
 }
 
 h2 {
-  color: wheat;
+  color: white;
   font-size: 32px;
   margin-bottom: 2rem;
   animation: fadeUp 3s ease-in-out forwards;
@@ -107,6 +108,7 @@ p {
 }
 
 .article .btn {
+  margin-top: 1em;
   width: 15rem;
   padding: 20px;
   font-size: 2rem;
