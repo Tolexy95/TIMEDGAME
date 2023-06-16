@@ -94,7 +94,7 @@ export const init = () => {
   word.innerText = ""; // Clear the word display
   letterContainer.innerHTML = ""; // Clear the letter container
   message.innerText = ""; // Clear the message
-  secondsCount = 20; // Set the seconds count to initial value
+  secondsCount = 40; // Set the seconds count to initial value
   createLetterButtons(); // Create the letter buttons in the UI
   updateIntervalTime(); // Update the interval time display
 };
