@@ -10,7 +10,6 @@ const displaySeconds = document.querySelector(".secondsDisplay");
 const controlContainer = document.querySelector(".control");
 const controlBtn = document.querySelector(".playGame");
 const gameContainer = document.querySelector(".container");
-// const userGuess = guessInput.value;
 let answer, noOfGuesses, guessedNumsArr;
 let interval = null;
 let seconds = 0;
@@ -90,7 +89,7 @@ const gameStartInit = () => {
   noOfGuessesRef.innerHTML = "Number of guesses are: None";
   guessedNumRef.innerHTML = "Guessed numbers are: 0";
   guessInput.value = "";
-  seconds = 40;
+  seconds = 60;
   hint.classList.remove("success", "error");
   numberTimerDisplay();
 };
